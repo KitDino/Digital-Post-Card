@@ -1,0 +1,79 @@
+
+:root {
+    --bg: black;
+    --status: hidden;
+    --rainbow: white;
+    --page-check: first;
+}
+
+body {
+    background-color: var(--bg);
+
+}
+
+button {
+    width: 20vh;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-color: rgb(134, 134, 134);
+}
+
+.main-block {
+    padding: 25%;
+    padding-bottom: 25%;
+    color: black;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark {
+    --bg: maroon;
+}
+
+.gradient-move.dark {
+    --status1: show;
+}
+
+.gif {
+    border-radius: 49%;
+    visibility: var(--status);
+    width: 100%;
+    /*animation: fadeIn 2s;*/
+}
+
+/* CODE FOR RAINBOW FONT COLOUR */
+.gradient-move{
+    /*visibility: var(--status);*/
+    background: var(--rainbow);
+    background-size:300% auto;
+    color:transparent;
+    -webkit-background-clip:text;
+    background-clip:text;
+    animation:gradientMove 4s linear infinite;
+    /*transition-delay: 2s;*/
+    /*transition-property: all;*/
+}
+
+.gradient-move2{
+    background: var(--rainbow);
+    background-size:300% auto;
+    color:transparent;
+    -webkit-background-clip:text;
+    background-clip:text;
+    animation:gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove{
+    0%{ background-position:0% center; }
+    100%{ background-position:300% center; }
+}
+
+@keyframes gradient-move2{
+    0%{ background-position:0% center; }
+    100%{ background-position:300% center; }
+}
+/* ENDS HERE */
